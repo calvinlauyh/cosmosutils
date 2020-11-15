@@ -7,3 +7,6 @@
 
 # build directory
 build/
+
+# codecov
+coverage.txt
