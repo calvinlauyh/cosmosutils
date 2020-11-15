@@ -1,7 +1,7 @@
 # Golang Cosmos SDK (Stargate) Transaction Decoder
 
 [![GoDoc](https://godoc.org/github.com/calvinlauco/cosmostxdecoder?status.svg)](http://godoc.org/github.com/calvinlauco/cosmostxdecoder)
-[![license](https://img.shields.io/github/license/calvinaluco/cosmostxdecoder.svg)](https://github.com/calvinlauco/cosmostxdecoder/blob/master/LICENSE)
+[![license](https://img.shields.io/github/license/calvinlauco/cosmostxdecoder.svg)](https://github.com/calvinlauco/cosmostxdecoder/blob/master/LICENSE)
 [![codecov](https://codecov.io/gh/calvinlauco/cosmostxdecoder/branch/master/graph/badge.svg)](https://codecov.io/gh/calvinlauco/cosmostxdecoder)
 [![GitHub Actions](https://github.com/calvinlauco/cosmostxdecoder/workflows/build/badge.svg?branch=master)](https://github.com/calvinlauco/cosmostxdecoder/actions)
 

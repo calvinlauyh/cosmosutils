@@ -31,6 +31,7 @@ jobs:
 
   code-coverage:
     name: Upload Code Coverage Report
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-go@v2
         with:
