@@ -9,7 +9,7 @@ import (
 type Tx struct {
 	cosmostypes.Tx
 
-	codec codec.ProtoCodecMarshaler
+	codec *codec.ProtoCodec
 }
 
 func (tx *Tx) MarshalToJSON() ([]byte, error) {
