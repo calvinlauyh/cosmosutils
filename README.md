@@ -148,7 +148,7 @@ This package is based on Cosmos SDK `v0.40.0`. Release versions are suffixed wit
 
 For example, if the transaction comes from a chain using Cosmos SDK `v0.40.0-rc1`:
 ```bash
-go checkout v0.0.1-rc1
+go checkout release/v0.0.1-rc1
 ```
 ```
 # go.mod
