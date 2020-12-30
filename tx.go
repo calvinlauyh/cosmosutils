@@ -30,6 +30,10 @@ type Body struct {
 	NonCriticalExtensionOptions []interface{}            `json:"non_critical_extension_options"`
 }
 
+type Message struct {
+	Type string `json:"@type"`
+}
+
 type AuthInfo struct {
 	SignerInfos []SignerInfo `json:"signer_infos"`
 	Fee         Fee          `json:"fee"`
