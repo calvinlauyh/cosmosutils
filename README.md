@@ -19,6 +19,8 @@ workflows
     - Decode transaction encoded in base64. This is usually find in Cosmos SDK CLI and Tendermint block API endpoint.
 - `decode-cosmostx [hex-encoded-tx]`
     - Decode transaction encoded in hex string
+- `decode-cosmospubkey [pubkey] -p [prefix][-t]`
+    - Convert bech32 consensus pubkey/ tenedermint pubkey to bech32 consensus address
 
 ### Build from source
 
@@ -36,6 +38,13 @@ $ ./build/decode-cosmostx 0A94010A91010A1C2F636F736D6F732E62616E6B2E763162657461
 {"body":{"messages":[{"@type":"/cosmos.bank.v1beta1.MsgSend","from_address":"tcro1fmprm0sjy6lz9llv7rltn0v2azzwcwzvk2lsyn","to_address":"tcro1782gn9hzqavecukdaqqclvsnpck4mtz3vwzpxl","amount":[{"denom":"basetcro","amount":"100000000"}]}],"memo":"","timeout_height":"0","extension_options":[],"non_critical_extension_options":[]},"auth_info":{"signer_infos":[{"public_key":{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A1mhVLohDEidpGYmpNYxxvikcaL72jQhZN1fxKFYkB8m"},"mode_info":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON"}},"sequence":"4"}],"fee":{"amount":[{"denom":"basetcro","amount":"1000"}],"gas_limit":"10000","payer":"","granter":""}},"signatures":["6BL7odUBFc3dU0x2dbg45s5xac3VrTEhgmlsq7dvBbgrlVfuGihCpVebNj8KXy5If3IoqB+/geEl5Y8mSinaBw=="]}
 ```
 
+### Convert tendermint pubkey or bech32 consensus pubkey to bech32 consensus address
+```bash
+$ ./build/decode-cosmospubkey Og8ZfQTHFgTBGD5qoyo5NpyJCJRddC+WuSPtyZtlE7E= -t 
+Bech32 Validator Consensus Address: tcrocnclcons1wqajdt4qseasx4e8r8fz7juwdkfu4quvt9e87u
+$ ./build/decode-cosmospubkey tcrocnclconspub1zcjduepq8g83jlgycutqfsgc8e42x23ex6wgjzy5t46zl94ey0kunxm9zwcsuzkxpr
+Bech32 Validator Consensus Address: tcrocnclcons1wqajdt4qseasx4e8r8fz7juwdkfu4quvt9e87u
+```
 ## Library
 
 You can also use this package as Golang library
