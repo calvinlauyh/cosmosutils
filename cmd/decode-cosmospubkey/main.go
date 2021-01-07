@@ -27,11 +27,11 @@ func main() {
 		AddFlag("tmpubkey,t", "tendermint pubkey for pubkey format", commando.Bool, false).          // required
 		SetAction(func(args map[string]commando.ArgValue, flags map[string]commando.FlagValue) {
 			var err error
-			tmpubkey_bool, _ := flags["tmpubkey"].Value.(bool)
+			isTmPubkey, _ := flags["tmpubkey"].Value.(bool)
 			prefix, _ := flags["prefix"].Value.(string)
 			pubkey := args["pubkey"].Value
 			var consensusNodeAddress string
-			if !tmpubkey_bool {
+			if !isTmPubkey {
 				consensusNodeAddress, err = ConsensusNodeAddressFromPubKey(prefix, pubkey)
 				if err != nil {
 					fmt.Fprintln(os.Stderr, "Error: Invalid pubkey or prefix")
