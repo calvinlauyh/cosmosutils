@@ -13,9 +13,9 @@ func main() {
 
 	// configure commando
 	commando.
-		SetExecutableName("decode-cosmospubkey").
+		SetExecutableName("pubkey-to-consaddress").
 		SetVersion("1.0.0").
-		SetDescription("This tool convert cosmos consensus pubkey/ tendermint pubkey to cosmos consensus address")
+		SetDescription("This tool convert cosmos consensus pubkey / tendermint pubkey to cosmos consensus address")
 
 	// configure info command
 	commando.
