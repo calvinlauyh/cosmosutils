@@ -13,14 +13,14 @@ A Golang library and tool to decode Cosmos SDK (Stargate) transaction in base64 
 
 ## CLI
 
-The project shipped with two binaries:
+The project shipped with a few binaries:
 workflows
 - `decode-cosmosbase64tx [base64-encoded-tx]`
     - Decode transaction encoded in base64. This is usually find in Cosmos SDK CLI and Tendermint block API endpoint.
 - `decode-cosmostx [hex-encoded-tx]`
     - Decode transaction encoded in hex string
-- `decode-cosmospubkey [pubkey] -p [prefix][-t]`
-    - Convert bech32 consensus pubkey/ tenedermint pubkey to bech32 consensus address
+- `pubkey-to-consaddress [pubkey] -p [prefix][-t]`
+    - Convert bech32 consensus pubkey / Tenedermint pubkey to bech32 consensus address
 
 ### Build from source
 

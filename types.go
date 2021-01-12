@@ -4,6 +4,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec/types"
 	"github.com/cosmos/cosmos-sdk/std"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	vestingtypes "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	crisistypes "github.com/cosmos/cosmos-sdk/x/crisis/types"
 	distributiontypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
@@ -28,4 +29,5 @@ func RegisterDefaultInterfaces(interfaceRegistry types.InterfaceRegistry) {
 	slashingtypes.RegisterInterfaces(interfaceRegistry)
 	stakingtypes.RegisterInterfaces(interfaceRegistry)
 	upgradetypes.RegisterInterfaces(interfaceRegistry)
+	vestingtypes.RegisterInterfaces(interfaceRegistry)
 }

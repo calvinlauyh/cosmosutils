@@ -6,10 +6,9 @@ require (
 	github.com/btcsuite/btcutil v1.0.2
 	github.com/cosmos/cosmos-sdk v0.39.1
 	github.com/stretchr/testify v1.6.1
-	github.com/tendermint/tendermint v0.34.0
 	github.com/thatisuday/commando v1.0.4
 )
 
 replace github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.2-alpha.regen.4
 
-replace github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.40.0-rc5
+replace github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.40.0
