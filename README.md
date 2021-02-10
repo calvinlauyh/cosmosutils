@@ -1,11 +1,11 @@
-# Golang Cosmos SDK (Stargate) Transaction Decoder
+# Golang Cosmos SDK (Stargate) Utilities
 
 [![GoDoc](https://godoc.org/github.com/calvinlauco/cosmostxdecoder?status.svg)](http://godoc.org/github.com/calvinlauco/cosmostxdecoder)
 [![license](https://img.shields.io/github/license/calvinlauco/cosmostxdecoder.svg)](https://github.com/calvinlauco/cosmostxdecoder/blob/master/LICENSE)
 [![codecov](https://codecov.io/gh/calvinlauco/cosmostxdecoder/branch/master/graph/badge.svg)](https://codecov.io/gh/calvinlauco/cosmostxdecoder)
 [![GitHub Actions](https://github.com/calvinlauco/cosmostxdecoder/workflows/build/badge.svg?branch=master)](https://github.com/calvinlauco/cosmostxdecoder/actions)
 
-A Golang library and tool to decode Cosmos SDK (Stargate) transaction in base64 and hex encoded format to JSON.
+A suirte of Golang library and tool to decode Cosmos SDK (Stargate) transaction in base64 and hex encoded format to JSON and other conversions.
 
 ## Pre-requisite
 
