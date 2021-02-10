@@ -5,11 +5,11 @@
 [![codecov](https://codecov.io/gh/calvinlauco/cosmostxdecoder/branch/master/graph/badge.svg)](https://codecov.io/gh/calvinlauco/cosmostxdecoder)
 [![GitHub Actions](https://github.com/calvinlauco/cosmostxdecoder/workflows/build/badge.svg?branch=master)](https://github.com/calvinlauco/cosmostxdecoder/actions)
 
-A suirte of Golang library and tool to decode Cosmos SDK (Stargate) transaction in base64 and hex encoded format to JSON and other conversions.
+A suirte of Golang libraries and tools to decode Cosmos SDK (Stargate) transaction in base64 and hex encoded format to JSON and other conversions.
 
 ## Pre-requisite
 
-[Golang](https://golang.org/dl/)
+[Golang](https://golang.org/dl/) for building the CLI
 
 ## CLI
 
@@ -19,12 +19,20 @@ workflows
     - Decode transaction encoded in base64. This is usually find in Cosmos SDK CLI and Tendermint block API endpoint.
 - `decode-cosmostx [hex-encoded-tx]`
     - Decode transaction encoded in hex string
-- `pubkey-to-consaddress [pubkey] -p [prefix][-t]`
+- `pubkey-to-consaddress [pubkey] -p [prefix][ -t]`
     - Convert bech32 consensus pubkey / Tenedermint pubkey to bech32 consensus address
+    - `prefix` is the bech32 prefix of the resulting consensus address
+    - Provide `-t` flag to specify the pubkey is Tendermint pubkey
 
 ### Build from source
 
-```baseh
+```bash
+make all
+```
+
+To re-build binaries with an updated version, run
+```bash
+make clean # this will remove all the built binaries
 make all
 ```
 
@@ -153,7 +161,12 @@ func RegisterInterfaces(interfaceRegistry types.InterfaceRegistry) {
 
 ## Cosmos Stargate Compatibility
 
-This package is based on Cosmos SDK `v0.40.0`. Release versions are suffixed with Cosmos SDK rc version for compatibility.
+The latest version of this package is based on Cosmos SDK `v0.41.0`. For backward compatibility, release versions for v0.40.0 are suffixed with their Cosmos SDK rc version.
+
+| Cosmos SDK Version | Library Version (Git Branch) |
+| --- | --- |
+| v0.41.0 | >= `release/v0.0.4` |
+| v0.40.0-rc{n} | `release/v0.0.1-rc{n}` to `release/v0.0.3-rc{n}` |
 
 For example, if the transaction comes from a chain using Cosmos SDK `v0.40.0-rc1`:
 ```bash
