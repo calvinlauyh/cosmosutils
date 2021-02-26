@@ -10,5 +10,3 @@ require (
 )
 
 replace github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.2-alpha.regen.4
-
-// replace github.com/cosmos/cosmos-sdk => github.com/cosmos/cosmos-sdk v0.41.0
