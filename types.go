@@ -1,4 +1,4 @@
-package cosmostxdecoder
+package cosmosutils
 
 import (
 	"github.com/cosmos/cosmos-sdk/codec/types"

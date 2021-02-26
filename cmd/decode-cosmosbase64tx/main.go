@@ -5,7 +5,7 @@ import (
 	"io"
 	"os"
 
-	. "github.com/calvinlauco/cosmostxdecoder"
+	. "github.com/calvinlauyh/cosmosutils"
 )
 
 func main() {

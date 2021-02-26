@@ -1,4 +1,4 @@
-module github.com/calvinlauco/cosmostxdecoder
+module github.com/calvinlauyh/cosmosutils
 
 go 1.15
 
