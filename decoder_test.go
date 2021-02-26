@@ -62,3 +62,10 @@ func TestDecodeDirectSignedTx(t *testing.T) {
     assert.NoError(t, err)
     assert.Equal(t, expected, string(actual))
 }
+
+func TestDecodeIBCBase64Tx(t *testing.T) {
+    decoder := cosmostxdecoder.DefaultDecoder
+    //https://www.mintscan.io/cosmos/txs/E3944CB1AF60EB1649B2DC9EBB6C67FFCCE17C6E44259417F4C4A657D9206B6E
+    _, err := decoder.DecodeBase64("CqABCpEBChwvY29zbW9zLmJhbmsudjFiZXRhMS5Nc2dTZW5kEnEKLWNvc21vczF6ZHNmZTN0c3dza2h4eWh1amNuNGFuODdxcGZ1OWdmNG5renJlbhItY29zbW9zMWhwMmc1M3N0cWs3cnBsd3N4ZzA2MHMwNXRmdHpqNGRmZDNzYTB5GhEKBXVhdG9tEggyMzc5MTgxORIKMTU5NjQyNjI0NRJlCk4KRgofL2Nvc21vcy5jcnlwdG8uc2VjcDI1NmsxLlB1YktleRIjCiEDbihAoG4eoUY0R8iAGJ1uQEJKb8XwAatZR0f+HzrnFlUSBAoCCH8SEwoNCgV1YXRvbRIEMjAwMBCA8QQaQJ0OaKsjTwhwtJVwXemWhJR2etmR4e/z+o+g2PMfo1J/J/9R/qgLnxVjbRfAPjMf6XfLQcxdlflR7DP+CR+5yA4=")
+    assert.NoError(t, err)
+}
