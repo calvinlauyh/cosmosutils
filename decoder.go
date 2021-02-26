@@ -1,4 +1,4 @@
-package cosmostxdecoder
+package cosmosutils
 
 import (
 	"encoding/base64"
