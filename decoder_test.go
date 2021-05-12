@@ -69,3 +69,9 @@ func TestDecodeIBCBase64Tx(t *testing.T) {
     _, err := decoder.DecodeBase64("CqABCpEBChwvY29zbW9zLmJhbmsudjFiZXRhMS5Nc2dTZW5kEnEKLWNvc21vczF6ZHNmZTN0c3dza2h4eWh1amNuNGFuODdxcGZ1OWdmNG5renJlbhItY29zbW9zMWhwMmc1M3N0cWs3cnBsd3N4ZzA2MHMwNXRmdHpqNGRmZDNzYTB5GhEKBXVhdG9tEggyMzc5MTgxORIKMTU5NjQyNjI0NRJlCk4KRgofL2Nvc21vcy5jcnlwdG8uc2VjcDI1NmsxLlB1YktleRIjCiEDbihAoG4eoUY0R8iAGJ1uQEJKb8XwAatZR0f+HzrnFlUSBAoCCH8SEwoNCgV1YXRvbRIEMjAwMBCA8QQaQJ0OaKsjTwhwtJVwXemWhJR2etmR4e/z+o+g2PMfo1J/J/9R/qgLnxVjbRfAPjMf6XfLQcxdlflR7DP+CR+5yA4=")
     assert.NoError(t, err)
 }
+
+func TestDecodeNFTBase64Tx(t *testing.T) {
+    decoder := cosmosutils.DefaultDecoder
+    _, err := decoder.DecodeBase64("Cm0KawofL2NoYWlubWFpbi5uZnQudjEuTXNnSXNzdWVEZW5vbRJICgdkZW5vbWlkEglEZW5vbU5hbWUaBlNjaGVtYSIqY3JvMW5rNHJxM3E0Nmx0Z2pnaHh6ODBoeTM4NXA5dWowdGY1OGFwa2NkEmgKTgpGCh8vY29zbW9zLmNyeXB0by5zZWNwMjU2azEuUHViS2V5EiMKIQIiwYZ9iW+Ai1OXWKSgdyxw6YyBZXa7EFg+i1gx8o6VjBIECgIIARIWChAKB2Jhc2Vjcm8SBTUwMDAwEMCaDBpAVYD6pk8lSj7eCfNJ62EikuQgOejcZuE4XSvZyGyXyOlthWjXisZEgIgHYZSh6R8iRGmiKh/bmCwRvaJN5GxDOQ==")
+    assert.NoError(t, err)
+}
