@@ -10,13 +10,13 @@ import (
 	distributiontypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
 	evidencetypes "github.com/cosmos/cosmos-sdk/x/evidence/types"
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
-	ibctypes "github.com/cosmos/cosmos-sdk/x/ibc/core/types"
-	ibctransfertypes "github.com/cosmos/cosmos-sdk/x/ibc/applications/transfer/types"
+	ibctypes "github.com/cosmos/ibc-go/modules/core/types"
+	ibctransfertypes "github.com/cosmos/ibc-go/modules/apps/transfer/types"
 	"github.com/cosmos/cosmos-sdk/x/params/types/proposal"
 	slashingtypes "github.com/cosmos/cosmos-sdk/x/slashing/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
-	nfttypes "github.com/crypto-org-chain/chain-main/v2/x/nft/types"
+	nfttypes "github.com/crypto-org-chain/chain-main/v3/x/nft/types"
 )
 
 func RegisterDefaultInterfaces(interfaceRegistry types.InterfaceRegistry) {
