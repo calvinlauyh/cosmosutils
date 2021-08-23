@@ -20,7 +20,7 @@ func TestDecodeInvalidTxBytes(t *testing.T) {
     decoder := cosmosutils.NewDecoder()
     _, err := decoder.Decode([]byte("INVALID"))
 
-    assert.EqualError(t, err, "errUnknownField \"*tx.TxRaw\": {TagNum: 9, WireType:\"fixed64\"}: tx parse error")
+    assert.EqualError(t, err, "expected 2 wire type, got 1: tx parse error")
 }
 
 func TestDecodeTxBytes(t *testing.T) {

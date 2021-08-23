@@ -165,6 +165,7 @@ The latest version of this package is based on Cosmos SDK `v0.41.0`. For backwar
 
 | Cosmos SDK Version | Library Version (Git Branch) |
 | --- | --- |
+| v0.43.0 | >= `release/v0.0.8` |
 | v0.41.0 | >= `release/v0.0.4` |
 | v0.40.0-rc{n} | `release/v0.0.1-rc{n}` to `release/v0.0.3-rc{n}` |
 

@@ -37,7 +37,7 @@ func ConsensusNodeAddressFromPubKey(bech32Prefix string, consensusNodePubKey str
 		return "", fmt.Errorf("error converting bech32 bits to tendermint public key: %v", err)
 	}
 	var pubKey cryptotypes.PubKey
-	legacy.Cdc.MustUnmarshalBinaryBare(pkToUnmarshal, &pubKey)
+	legacy.Cdc.MustUnmarshal(pkToUnmarshal, &pubKey)
 
 	conv, err = bech32.ConvertBits(pubKey.Address().Bytes(), 8, 5, true)
 	if err != nil {
