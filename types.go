@@ -18,6 +18,7 @@ import (
 	ibctransfertypes "github.com/cosmos/ibc-go/modules/apps/transfer/types"
 	ibctypes "github.com/cosmos/ibc-go/modules/core/types"
 	nfttypes "github.com/crypto-org-chain/chain-main/v3/x/nft/types"
+	feegranttypes "github.com/cosmos/cosmos-sdk/x/feegrant"
 )
 
 func RegisterDefaultInterfaces(interfaceRegistry types.InterfaceRegistry) {
@@ -38,4 +39,5 @@ func RegisterDefaultInterfaces(interfaceRegistry types.InterfaceRegistry) {
 	ibctransfertypes.RegisterInterfaces(interfaceRegistry)
 	nfttypes.RegisterInterfaces(interfaceRegistry)
 	authztypes.RegisterInterfaces(interfaceRegistry)
+	feegranttypes.RegisterInterfaces(interfaceRegistry)
 }
