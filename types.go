@@ -10,6 +10,7 @@ import (
 	crisistypes "github.com/cosmos/cosmos-sdk/x/crisis/types"
 	distributiontypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
 	evidencetypes "github.com/cosmos/cosmos-sdk/x/evidence/types"
+	feegranttypes "github.com/cosmos/cosmos-sdk/x/feegrant"
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 	"github.com/cosmos/cosmos-sdk/x/params/types/proposal"
 	slashingtypes "github.com/cosmos/cosmos-sdk/x/slashing/types"
@@ -18,7 +19,7 @@ import (
 	ibctransfertypes "github.com/cosmos/ibc-go/modules/apps/transfer/types"
 	ibctypes "github.com/cosmos/ibc-go/modules/core/types"
 	nfttypes "github.com/crypto-org-chain/chain-main/v3/x/nft/types"
-	feegranttypes "github.com/cosmos/cosmos-sdk/x/feegrant"
+	gravitytypes "github.com/peggyjv/gravity-bridge/module/x/gravity/types"
 	evmtypes "github.com/tharsis/ethermint/x/evm/types"
 )
 
@@ -42,4 +43,5 @@ func RegisterDefaultInterfaces(interfaceRegistry types.InterfaceRegistry) {
 	authztypes.RegisterInterfaces(interfaceRegistry)
 	feegranttypes.RegisterInterfaces(interfaceRegistry)
 	evmtypes.RegisterInterfaces(interfaceRegistry)
+	gravitytypes.RegisterInterfaces(interfaceRegistry)
 }
