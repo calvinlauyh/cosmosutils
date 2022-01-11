@@ -3,7 +3,7 @@ package cosmosutils
 import (
 	"fmt"
 
-	"github.com/btcsuite/btcutil/bech32"
+	"github.com/cosmos/btcutil/bech32"
 	"github.com/cosmos/cosmos-sdk/codec/legacy"
 	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
@@ -27,7 +27,7 @@ func ConsensusNodeAddressFromTmPubKey(bech32Prefix string, pubKey []byte) (strin
 }
 
 func ConsensusNodeAddressFromPubKey(bech32Prefix string, consensusNodePubKey string) (string, error) {
-	_, conv, err := bech32.Decode(consensusNodePubKey)
+	_, conv, err := bech32.Decode(consensusNodePubKey, 1023)
 	if err != nil {
 		return "", fmt.Errorf("error converting consensus node pubkey to address")
 	}
