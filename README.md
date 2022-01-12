@@ -48,9 +48,9 @@ $ ./build/decode-cosmostx 0A94010A91010A1C2F636F736D6F732E62616E6B2E763162657461
 
 ### Convert tendermint pubkey or bech32 consensus pubkey to bech32 consensus address
 ```bash
-$ ./build/decode-cosmospubkey Og8ZfQTHFgTBGD5qoyo5NpyJCJRddC+WuSPtyZtlE7E= -t 
+$ ./build/pubkey-to-consaddress Og8ZfQTHFgTBGD5qoyo5NpyJCJRddC+WuSPtyZtlE7E= -t 
 Bech32 Validator Consensus Address: tcrocnclcons1wqajdt4qseasx4e8r8fz7juwdkfu4quvt9e87u
-$ ./build/decode-cosmospubkey tcrocnclconspub1zcjduepq8g83jlgycutqfsgc8e42x23ex6wgjzy5t46zl94ey0kunxm9zwcsuzkxpr
+$ ./build/pubkey-to-consaddress tcrocnclconspub1zcjduepq8g83jlgycutqfsgc8e42x23ex6wgjzy5t46zl94ey0kunxm9zwcsuzkxpr
 Bech32 Validator Consensus Address: tcrocnclcons1wqajdt4qseasx4e8r8fz7juwdkfu4quvt9e87u
 ```
 ## Library
