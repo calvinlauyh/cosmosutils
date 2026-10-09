@@ -5,7 +5,7 @@
 [![codecov](https://codecov.io/gh/calvinlauyh/cosmosutils/branch/master/graph/badge.svg)](https://codecov.io/gh/calvinlauyh/cosmosutils)
 [![GitHub Actions](https://github.com/calvinlauyh/cosmosutils/workflows/build/badge.svg?branch=master)](https://github.com/calvinlauyh/cosmosutils/actions)
 
-A suirte of Golang libraries and tools to decode Cosmos SDK (Stargate) transaction in base64 and hex encoded format to JSON and other conversions.
+A suite of Golang libraries and tools to decode Cosmos SDK (Stargate) transaction in base64 and hex encoded format to JSON and other conversions.
 
 ## Pre-requisite
 
